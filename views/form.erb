@@ -1,0 +1,11 @@
+<h1><%= @player %>のフォーム</h1>
+<form action="/" method="post">
+	<label for="article">投稿</label>
+	<input type="text" name="article">
+	<p></p>
+	<label for="name">名前</label>
+	<input type="text" name="name">
+	<button type="sumbit">送信する</button>
+</form>
+<p><%= @article %> <%= @name %></p>
+<p><%= @message %></p>
