@@ -1,0 +1,15 @@
+<h1>RPGの戦闘フォーム</h1>
+<p><%= @message %></p>
+<form action="/" method="post">
+    <label for="name">プレイヤー</label>
+    <select name="name">
+        <% @players.each do |player| %>
+            <option value="<%= player %>"><%= player %></option>
+            <% end %>
+    </select>
+    <p></p>
+    <button type="submit">たたかう</button>
+</form>
+<form action="/" method="get">
+    <input type="submit" value="にげる！">
+</form>
